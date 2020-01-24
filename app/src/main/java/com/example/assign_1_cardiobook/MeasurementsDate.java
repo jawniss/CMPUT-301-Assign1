@@ -11,6 +11,10 @@ public class MeasurementDate
     MeasurementDate(String dateRecorded)
     {
         this.dateRecorded = dateRecorded;
+        String[] ymd = dateRecorded.split("-");
+        this.year = ymd[0];
+        this.month = ymd[1];
+        this.day = ymd[2];
     }
 
 
@@ -20,6 +24,10 @@ public class MeasurementDate
     }
 
     public String getYear() { return this.year; }
+
+    public String getMonth() { return this.month; }
+
+    public String getDay() { return this.day; }
 
 
 }
